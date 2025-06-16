@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Popper Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hud">
+    <div class="scoreboard">Score: <span id="score">0</span></div>
+    <div class="timer">Time: <span id="timer">60</span>s</div>
+  </div>
+  <div id="game-area">
+    <div id="bubble-bg"></div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modal-title">Bubble Popper Game 🫧</h2>
+      <div id="modal-body">
+        <p>Pop as many bubbles as you can in 1 minute! ✅<br>
+        Avoid the obstacle bubbles! ❌ (they subtract points)<br>
+        You win when timer ends. Game over if your score drops too low. If more than 5 ordinary bubbles escape, you lose!<br>
+       Good Luck!</p>
+      </div>
+      <button id="start-btn" class="game-btn">Start Game</button>
+      <button id="restart-btn" class="game-btn" style="display:none;">Restart</button>
+    </div>
+  </div>
+  <div id="countdown" class="countdown hidden"></div>
+  <button id="pause-btn" class="pause-btn" title="Pause/Resume">⏸️</button>
+  <script src="script.js"></script>
+</body>
+</html>
